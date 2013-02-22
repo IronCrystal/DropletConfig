@@ -1,0 +1,9 @@
+name: DropletConfig
+version: 1.0 b1
+
+description: Config and Command "Droplet" plugin for the Spout platform to demonstrate the usage of commands and files.
+author: IronCrystal
+
+main: me.IronCrystal.DropletConfig.DropletConfig
+platform: SERVER
+reload: true
