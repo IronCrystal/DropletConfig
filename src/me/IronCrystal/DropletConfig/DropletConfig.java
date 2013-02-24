@@ -39,7 +39,7 @@ public class DropletConfig extends CommonPlugin {
 		/**
 		 * Commands
 		 */
-		CommandRegistrationsFactory<Class<?>> commandRegFactory = new AnnotatedCommandRegistrationFactory(new SimpleInjector(), new SimpleAnnotatedCommandExecutorFactory());
+		CommandRegistrationsFactory<Class<?>> commandRegFactory = new AnnotatedCommandRegistrationFactory(new SimpleInjector(this), new SimpleAnnotatedCommandExecutorFactory());
 		getEngine().getRootCommand().addSubCommands(this, DropletCommand.class, commandRegFactory);		
 	}
 
